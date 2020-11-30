@@ -1,0 +1,38 @@
+html {
+    background: lightblue;
+}
+main {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 50px;
+    min-width: 500px;
+}
+h1 {
+    text-shadow: -4px -4px 5px gray;
+    color: firebrick;
+}
+input {
+    text-align: center;
+    width: 15em;
+    height: 2em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px darkslateblue;
+    font-size: 1.05em;
+}
+input:invalid {
+    border: 1px solid maroon;
+}
+img {
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+.drinkContainer {
+    background: floralwhite;
+    padding: 0 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px;
+    margin-top: 10px;
+}
