@@ -7,12 +7,36 @@
     <title>Drinks</title>
 </head>
 <body>
+    <header>
+         <div id="selections">
+            <input id="input" type="text" placeholder="Search for a drink, you need one" required>
+            <select onchange="selectCategory()" name="drinkCategory" id="category">
+                <option value="">Select a Drink Category</option>
+                <option value="Ordinary_Drink">Ordinary Drink</option>
+                <option value="Cocktail">Cocktail</option>
+                <option value="Milk_/_Float_/_Shake">Milk/Float/Shake</option>
+                <option value="Cocoa">Cocoa</option>
+                <option value="Other/Unknown">Other</option>
+                <option value="Shot">Shot</option>
+                <option value="Coffee_/_Tea">Coffee/Tea</option>
+                <option value="Homemade_Liqueur">Homemade Liqueur</option>
+                <option value="Punch_/_Party_Drink">Punch/Party Drink</option>
+                <option value="Beer">Beer</option>
+                <option value="Soft_Drink_/_Soda">Soft Drink</option>
+            </select>
+            <select onchange="selectIngredients()" name="ingredients" id="ingredients">
+                <option value="">Select an Ingredient</option>
+            </select>
+            <button onclick="randomDrink()">Random!</button>
+        </div>
+    </header>
     <main>
-        <input id="input" type="text" placeholder="Search for a drink, you need one" required>
+       
         <div id="results">
 
         </div>
     </main>
+    <footer>Built with <a href="thecocktaildb.com" target="_blank">TheCocktailDB</a></footer>
 </body>
     <script src="script.js"></script>
 </html>

@@ -1,5 +1,6 @@
 html {
     background: lightblue;
+    height: fit-content;
 }
 main {
     max-width: 50%;
@@ -10,9 +11,19 @@ main {
 }
 h1 {
     text-shadow: -4px -4px 5px gray;
-    color: firebrick;
+}
+#selections {
+    margin: 0 auto; 
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    justify-content: space-around;
+    align-items: center;
 }
 input {
+    display: block;
     text-align: center;
     width: 15em;
     height: 2em;
@@ -29,10 +40,41 @@ img {
 }
 
 .drinkContainer {
-    background: floralwhite;
+    background: linear-gradient(floralwhite, lightblue);
     padding: 0 100px;
     border: 1px solid black;
     border-radius: 4px;
     box-shadow: 5px 5px 5px;
     margin-top: 10px;
+}
+
+p {
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 5px 3px 5px;
+    border-radius: 3px;
+    background: silver;
+}
+button {
+    transition: .5s all linear;
+    padding: 5px;
+}
+button:hover {
+    background: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    background: maroon;
+    text-align: center;
+    color: white;
+}
+footer a {
+    color: orange;
+}
+footer a:hover {
+    color: gray;
 }
